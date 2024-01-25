@@ -1,0 +1,181 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');  
+    background-size: cover;  
+}
+.navbar {
+ 
+    background: 
+      linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.5),  
+        rgba(0, 0, 0, 0.7) 60%, 
+        rgba(0, 0, 0, 0.9) 100%),
+      url('https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1') no-repeat center center / cover;
+}
+ .navbar-dark .navbar-brand {
+    font-family: 'Orbitron', sans-serif;  
+    color: #9c88ff;  
+    text-transform: uppercase;  
+    letter-spacing: 0.05em;  
+}
+
+ 
+.navbar-dark .nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    color: inherit;  
+    text-decoration: none;  
+    transition: color 0.3s ease;  
+}
+
+ 
+.navbar-dark .nav-link:hover {
+    color: #ffffff; 
+}
+ 
+.navbar-dark .nav-link {
+    font-family: 'Orbitron', sans-serif;  
+    color: #9c88ff; 
+    text-transform: uppercase;  
+    letter-spacing: 0.05em;  
+    position: relative;
+    padding: 0.5rem 1rem;  
+    transition: color 0.3s ease-in-out;  
+    overflow: hidden;  
+}
+
+ 
+.navbar-dark .nav-link:hover {
+    color: #ffffff;  
+}
+
+ 
+.navbar-dark .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #9c88ff;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(0);  
+    transform-origin: right;  
+}
+
+ 
+.navbar-dark .nav-link:hover::after {
+    transform: scaleX(1);  
+    transform-origin: left;  
+}
+main {
+    padding-top: 20px;
+}
+#location h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+.car-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 3px solid rgba(118, 5, 184, 0.6);  
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;  
+}
+.car-image:hover {
+    transform: scale(1.05);  
+}
+
+.text-container {
+    background: rgb(101, 1, 194);  
+    padding: 15px;
+    border-radius: 5px;  
+    color: #fff; 
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgb(178, 105, 212);
+}
+.video-description p {
+    color: #ffffff;  
+    background-color: rgba(185, 4, 170, 0.973);  
+    font-size: 1.2em;  
+    text-align: center;  
+    padding: 10px;
+    border-radius: 5px;  
+    margin-top: 10px;  
+    box-shadow: 0 2px 4px rgb(178, 105, 212); / 
+}
+#contact {
+    background-color: #222;  
+    padding: 20px;
+    border-radius: 8px;
+    color: #ddd;  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+}
+
+#contact h2 {
+    color: #fff; 
+    margin-bottom: 15px;
+}
+
+#contact label {
+    color: #bbb; 
+}
+
+#contact input, #contact textarea {
+    background-color: #333;  
+    border: 1px solid #444;  
+    color: #ddd;  
+}
+
+#contact input::placeholder, #contact textarea::placeholder {
+    color: #666;  
+}
+
+#contact input:focus, #contact textarea:focus {
+    border-color: #555;  
+    outline: none;  
+}
+
+#contact button {
+    background-color: #0056b3;  
+    color: #ffffff; 
+    border: none;  
+    padding: 10px 20px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);  
+}
+
+#contact button:hover {
+    background-color: #003d82;  
+}
+
+#contact .form-text {
+    color: #999;  
+}
+#location iframe {
+    filter: invert(1) hue-rotate(180deg);  
+    width: 100%;
+    height: 450px;  
+    border: none;
+    border-radius: 8px;  
+    box-shadow: 0 4px 8px rgba(115, 0, 192, 0.178);  
+}
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+  
+
+  
